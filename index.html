@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来を動かす場所 - [会社名]</title>
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- 外部CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 外部JavaScriptファイルの読み込み -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="l-wrapper">
+        <header class="l-header">
+            <div class="l-header__inner l-inner">
+                <h1 class="l-header__logo">
+                    <a href="/" class="c-logo">YourCompany</a>
+                </h1>
+                <nav class="l-header__nav c-gnav">
+                    <ul class="c-gnav__list">
+                        <li class="c-gnav__item"><a href="#about" class="c-gnav__link">About Us</a></li>
+                        <li class="c-gnav__item"><a href="#philosophy" class="c-gnav__link">Philosophy</a></li>
+                        <li class="c-gnav__item"><a href="#service" class="c-gnav__link">Service</a></li>
+                        <li class="c-gnav__item"><a href="#recruit" class="c-gnav__link">Recruit</a></li>
+                        <li class="c-gnav__item"><a href="#culture" class="c-gnav__link">Culture & Blog</a></li>
+                        <li class="c-gnav__item"><a href="#contact" class="c-btn c-btn--primary">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="c-hamburger-btn" aria-label="メニューを開く">
+                    <span class="c-hamburger-btn__line"></span>
+                    <span class="c-hamburger-btn__line"></span>
+                    <span class="c-hamburger-btn__line"></span>
+                </button>
+            </div>
+        </header>
+
+        <main class="l-main">
+            <!-- Hero Section (全幅レイアウト) -->
+            <section class="p-hero">
+                <div class="p-hero__bg">
+                    <img src="https://source.unsplash.com/random/1920x1080/?japanese engineers working, modern office, dynamic, future, diverse team, innovative startup"
+                        alt="未来を創るエンジニアたち" class="c-img"
+                        data-keyword="japanese engineers working, modern office, dynamic, future, diverse team, innovative startup">
+                </div>
+                <div class="p-hero__inner l-inner">
+                    <h2 class="p-hero__heading c-heading c-heading--lv1">Unlock Your Potential.<br>Drive the Future.
+                    </h2>
+                    <p class="p-hero__text c-text">革新的な技術と自由な発想で、<br class="u-sp-only">未来をデザインするエンジニア集団。</p>
+                    <a href="#recruit" class="p-hero__btn c-btn c-btn--primary c-btn--large">Join Our Team</a>
+                </div>
+            </section>
+
+            <!-- Marquee Section (Heroの直下、無限スクロールテキスト) -->
+            <section class="p-marquee">
+                <div class="p-marquee__content">
+                    <span class="p-marquee__text">ENGINEER FIRST · INNOVATION · GROWTH · TRANSPARENCY · WORK-LIFE
+                        BALANCE · FUTURE-DRIVEN · YOUR POTENTIAL UNLOCKED · </span>
+                    <span class="p-marquee__text">ENGINEER FIRST · INNOVATION · GROWTH · TRANSPARENCY · WORK-LIFE
+                        BALANCE · FUTURE-DRIVEN · YOUR POTENTIAL UNLOCKED · </span>
+                    <!-- JSで複製、またはCSSアニメーションのために複数配置 -->
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="p-about l-section">
+                <div class="l-inner">
+                    <div class="p-about__header c-section-header">
+                        <h2 class="c-heading c-heading--lv2">About Us</h2>
+                        <p class="c-text">未来を拓く、私たちの挑戦</p>
+                    </div>
+                    <div class="p-about__content">
+                        <div class="p-about__body">
+                            <h3 class="p-about__sub-heading c-heading c-heading--lv3">テクノロジーで社会を豊かに</h3>
+                            <p class="c-text">
+                                私たちは、最先端の技術を駆使し、社会に新たな価値と感動を提供するプロフェッショナル集団です。常に変化を恐れず、挑戦し続けることで、お客様と社会の発展に貢献します。</p>
+                            <p class="c-text">多様なバックグラウンドを持つメンバーが、それぞれの専門性を活かし、オープンなコミュニケーションの中で最高のソリューションを追求しています。</p>
+                            <a href="#" class="c-btn c-btn--secondary">Learn More</a>
+                        </div>
+                        <div class="p-about__img-wrapper">
+                            <img src="https://source.unsplash.com/random/800x600/?japanese team collaboration, smiling, diverse, modern meeting room, brainstorming, vibrant office"
+                                alt="モダンなオフィスで協力する日本人チーム" class="c-img"
+                                data-keyword="japanese team collaboration, smiling, diverse, modern meeting room, brainstorming, vibrant office">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Philosophy / Working Style Section (一部全幅レイアウト) -->
+            <section id="philosophy" class="p-philosophy l-section l-section--full-bleed">
+                <div class="l-inner">
+                    <div class="p-philosophy__header c-section-header">
+                        <h2 class="c-heading c-heading--lv2">Our Philosophy &amp; Working Style</h2>
+                        <p class="c-text">自由と成長を尊重する私たちの文化</p>
+                    </div>
+                    <div class="p-philosophy__content">
+                        <div class="p-philosophy__item">
+                            <div class="p-philosophy__img-wrapper">
+                                <img src="https://source.unsplash.com/random/800x600/?japanese people remote working, flexible work, work-life balance, cozy home office, focused"
+                                    alt="リモートワークで働く日本人" class="c-img"
+                                    data-keyword="japanese people remote working, flexible work, work-life balance, cozy home office, focused">
+                            </div>
+                            <h3 class="p-philosophy__title c-heading c-heading--lv3">フレキシブルな働き方</h3>
+                            <p class="c-text">リモートワークやフレックスタイム制を導入し、個人のライフスタイルに合わせた最適な働き方をサポート。最高のパフォーマンスを発揮できる環境を提供します。
+                            </p>
+                        </div>
+                        <div class="p-philosophy__item">
+                            <div class="p-philosophy__img-wrapper">
+                                <img src="https://source.unsplash.com/random/800x600/?japanese young professional, learning, mentorship, career growth, laptop, skill development"
+                                    alt="学び、成長する日本人プロフェッショナル" class="c-img"
+                                    data-keyword="japanese young professional, learning, mentorship, career growth, laptop, skill development">
+                            </div>
+                            <h3 class="p-philosophy__title c-heading c-heading--lv3">継続的な成長支援</h3>
+                            <p class="c-text">最新技術の習得支援、社内外研修、メンター制度など、エンジニアとしてのスキルアップとキャリアパス形成を全面的にバックアップします。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service Section (一部全幅要素) -->
+            <section id="service" class="p-service l-section">
+                <div class="l-inner">
+                    <div class="p-service__header c-section-header">
+                        <h2 class="c-heading c-heading--lv2">Our Services</h2>
+                        <p class="c-text">確かな技術で、お客様の課題を解決</p>
+                    </div>
+                </div>
+                <div class="p-service__full-bleed-content">
+                    <div class="p-service__full-bleed-item">
+                        <div class="p-service__img-wrapper">
+                            <img src="https://source.unsplash.com/random/1200x800/?abstract network security, digital transformation, technology solution, data flow, server room"
+                                alt="ネットワークセキュリティとデジタル変革" class="c-img"
+                                data-keyword="abstract network security, digital transformation, technology solution, data flow, server room">
+                        </div>
+                        <div class="p-service__text-content l-inner">
+                            <h3 class="p-service__title c-heading c-heading--lv3">デジタルソリューション開発</h3>
+                            <p class="c-text">お客様のビジネス課題を深く理解し、最適なWebシステム、モバイルアプリ、クラウドソリューションを設計・開発します。</p>
+                        </div>
+                    </div>
+                    <div class="p-service__full-bleed-item p-service__full-bleed-item--reverse">
+                        <div class="p-service__img-wrapper">
+                            <img src="https://source.unsplash.com/random/1200x800/?japanese software development team, coding, brainstorming, innovative product launch, agile development"
+                                alt="アジャイル開発に取り組む日本人ソフトウェア開発チーム" class="c-img"
+                                data-keyword="japanese software development team, coding, brainstorming, innovative product launch, agile development">
+                        </div>
+                        <div class="p-service__text-content l-inner">
+                            <h3 class="p-service__title c-heading c-heading--lv3">DX推進コンサルティング</h3>
+                            <p class="c-text">最新技術動向と豊富な知見に基づき、企業のデジタル変革を戦略立案から実行まで一貫してサポートします。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-inner u-margin-top-l">
+                    <a href="#" class="c-btn c-btn--secondary c-btn--center">View All Services</a>
+                </div>
+            </section>
+
+            <!-- Recruit Section (一部全幅要素) -->
+            <section id="recruit" class="p-recruit l-section l-section--dark-bg">
+                <div class="l-inner">
+                    <div class="p-recruit__header c-section-header">
+                        <h2 class="c-heading c-heading--lv2 c-heading--white">Recruit</h2>
+                        <p class="c-text c-text--white">あなたの才能を、ここで開花させませんか？</p>
+                    </div>
+                    <div class="p-recruit__content">
+                        <div class="p-recruit__item">
+                            <div class="p-recruit__img-wrapper">
+                                <img src="https://source.unsplash.com/random/800x600/?japanese young woman engineer, smiling, confident, career path, modern office setting"
+                                    alt="笑顔で自信に満ちた日本人女性エンジニア" class="c-img"
+                                    data-keyword="japanese young woman engineer, smiling, confident, career path, modern office setting">
+                            </div>
+                            <h3 class="p-recruit__title c-heading c-heading--lv3 c-heading--white">挑戦を歓迎する文化</h3>
+                            <p class="c-text c-text--white">私たちは、新しい技術やアイデアへの挑戦を積極的に支援します。失敗を恐れず、常に高みを目指すエンジニアを求めています。
+                            </p>
+                        </div>
+                        <div class="p-recruit__item">
+                            <div class="p-recruit__img-wrapper">
+                                <img src="https://source.unsplash.com/random/800x600/?japanese diverse engineers, happy, team spirit, casual office environment, open communication"
+                                    alt="多様な日本人エンジニアのチーム" class="c-img"
+                                    data-keyword="japanese diverse engineers, happy, team spirit, casual office environment, open communication">
+                            </div>
+                            <h3 class="p-recruit__title c-heading c-heading--lv3 c-heading--white">チームで創る未来</h3>
+                            <p class="c-text c-text--white">
+                                多様なスキルと経験を持つ仲間と協力し、最高のプロダクトを世に送り出します。オープンなコミュニケーションが私たちの強みです。</p>
+                        </div>
+                        <div class="p-recruit__item">
+                            <div class="p-recruit__img-wrapper">
+                                <img src="https://source.unsplash.com/random/800x600/?japanese people casual interview, friendly atmosphere, open communication, startup culture"
+                                    alt="フレンドリーな雰囲気のカジュアルな面接" class="c-img"
+                                    data-keyword="japanese people casual interview, friendly atmosphere, open communication, startup culture">
+                            </div>
+                            <h3 class="p-recruit__title c-heading c-heading--lv3 c-heading--white">あなたの個性を活かす</h3>
+                            <p class="c-text c-text--white">私たちは、一人ひとりの個性と才能を尊重します。あなたの強みを最大限に活かせるポジションが、きっと見つかります。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-recruit__cta-full-bleed">
+                    <div class="l-inner">
+                        <a href="#" class="c-btn c-btn--primary c-btn--large c-btn--center">採用情報を見る</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Culture / Blog Section -->
+            <section id="culture" class="p-culture l-section">
+                <div class="l-inner">
+                    <div class="p-culture__header c-section-header">
+                        <h2 class="c-heading c-heading--lv2">Culture &amp; Blog</h2>
+                        <p class="c-text">私たちの日常と最新情報</p>
+                    </div>
+                    <div class="p-culture__content">
+                        <article class="c-card c-card--blog">
+                            <div class="c-card__img-wrapper">
+                                <img src="https://source.unsplash.com/random/600x400/?japanese company event, team building, lively, happy employees, casual gathering"
+                                    alt="活気ある社内イベント" class="c-img"
+                                    data-keyword="japanese company event, team building, lively, happy employees, casual gathering">
+                            </div>
+                            <div class="c-card__body">
+                                <h3 class="c-card__title c-heading c-heading--lv4">【イベントレポート】夏のチームビルディング合宿開催！</h3>
+                                <p class="c-card__meta">2023.08.15 | Culture</p>
+                                <p class="c-card__text c-text">先日、全社員参加のチームビルディング合宿を開催しました。普段話せないメンバーとも交流を深め...</p>
+                                <a href="#" class="c-card__link c-link">Read More</a>
+                            </div>
+                        </article>
+                        <article class="c-card c-card--blog">
+                            <div class="c-card__img-wrapper">
+                                <img src="https://source.unsplash.com/random/600x400/?japanese tech blog, coding, coffee, focused work, developer desk setup"
+                                    alt="開発者のデスクとコーヒー" class="c-img"
+                                    data-keyword="japanese tech blog, coding, coffee, focused work, developer desk setup">
+                            </div>
+                            <div class="c-card__body">
+                                <h3 class="c-card__title c-heading c-heading--lv4">Vue 3 Composition APIの活用事例とベストプラクティス
+                                </h3>
+                                <p class="c-card__meta">2023.08.01 | Tech Blog</p>
+                                <p class="c-card__text c-text">Vue 3のComposition APIは、大規模なアプリケーション開発において非常に強力なツールです...
+                                </p>
+                                <a href="#" class="c-card__link c-link">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="u-margin-top-l">
+                        <a href="#" class="c-btn c-btn--secondary c-btn--center">View All Blogs</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section (お問い合わせ・採用誘導) -->
+            <section id="contact" class="p-cta l-section l-section--primary-gradient">
+                <div class="l-inner">
+                    <h2 class="p-cta__heading c-heading c-heading--lv2 c-heading--white">未来を共に創りませんか？</h2>
+                    <p class="p-cta__text c-text c-text--white">私たちの技術と情熱に共感し、新しい挑戦を求めるエンジニアを募集しています。<br
+                            class="u-sp-only">また、ビジネスパートナーとしてご協力いただける企業様からのご連絡もお待ちしております。</p>
+                    <div class="p-cta__btn-group">
+                        <a href="#recruit" class="c-btn c-btn--white c-btn--large">採用情報を見る</a>
+                        <a href="#" class="c-btn c-btn--accent-orange c-btn--large">お問い合わせ</a>
+                    </div>
+                    <!-- 画像配置の絶対義務を満たすため、CTAセクションにも画像を追加 -->
+                    <div class="p-cta__img-wrapper">
+                        <img src="https://source.unsplash.com/random/800x600/?japanese engineers discussion, smiling, future, innovation, diverse team"
+                            alt="未来について議論する日本人エンジニア" class="c-img"
+                            data-keyword="japanese engineers discussion, smiling, future, innovation, diverse team">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="l-footer">
+            <div class="l-footer__inner l-inner">
+                <div class="l-footer__col">
+                    <a href="/" class="l-footer__logo c-logo c-logo--white">YourCompany</a>
+                    <p class="l-footer__address c-text c-text--white">〒100-0000 東京都千代田区〇〇1-2-3<br>TEL: 03-XXXX-XXXX</p>
+                </div>
+                <nav class="l-footer__nav c-footer-nav">
+                    <ul class="c-footer-nav__list">
+                        <li class="c-footer-nav__item"><a href="#about" class="c-footer-nav__link">About Us</a></li>
+                        <li class="c-footer-nav__item"><a href="#philosophy" class="c-footer-nav__link">Philosophy</a>
+                        </li>
+                        <li class="c-footer-nav__item"><a href="#service" class="c-footer-nav__link">Service</a></li>
+                        <li class="c-footer-nav__item"><a href="#recruit" class="c-footer-nav__link">Recruit</a></li>
+                        <li class="c-footer-nav__item"><a href="#culture" class="c-footer-nav__link">Culture & Blog</a>
+                        </li>
+                        <li class="c-footer-nav__item"><a href="#contact" class="c-footer-nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="l-footer__social c-social-nav">
+                    <ul class="c-social-nav__list">
+                        <li class="c-social-nav__item"><a href="#" class="c-social-nav__link" aria-label="Twitter"><img
+                                    src="https://placehold.jp/24x24.png?text=TW" alt="Twitterアイコン"></a></li>
+                        <li class="c-social-nav__item"><a href="#" class="c-social-nav__link" aria-label="Facebook"><img
+                                    src="https://placehold.jp/24x24.png?text=FB" alt="Facebookアイコン"></a></li>
+                        <li class="c-social-nav__item"><a href="#" class="c-social-nav__link" aria-label="LinkedIn"><img
+                                    src="https://placehold.jp/24x24.png?text=LI" alt="LinkedInアイコン"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-footer__copyright">
+                <small class="c-copyright">&copy; 2023 YourCompany All Rights Reserved.</small>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
