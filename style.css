@@ -685,13 +685,13 @@ ul {
 /*
  * Media Queries for Responsive Design
  */
-@media (max-width: var(--breakpoint-desktop)) {
+@media (max-width: 1024px) {
     .l-global-nav__list {
         gap: 20px;
     }
 }
 
-@media (max-width: var(--breakpoint-tablet)) {
+@media (max-width: 768px) {
     .l-section {
         padding: var(--space-section-sp);
     }
@@ -851,7 +851,7 @@ ul {
     }
 }
 
-@media (max-width: var(--breakpoint-mobile)) {
+@media (max-width: 480px) {
     .l-container {
         padding: 0 15px;
     }
