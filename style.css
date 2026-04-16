@@ -906,7 +906,7 @@ ul {
 }
 
 /*
- * FLOCSS - Architecture for CSS
+ * FLOCSS-Architecture for CSS
  *
  * This CSS is structured following the FLOCSS methodology:
  * Foundational, Layout, Object (Component, Project, Utility).
@@ -1122,7 +1122,7 @@ p {
 }
 
 
-/* Object - Component */
+/* Object-Component */
 .c-button {
     display: inline-flex;
     align-items: center;
@@ -1375,7 +1375,7 @@ p {
     margin-bottom: 0;
 }
 
-/* Object - Project */
+/* Object-Project */
 .p-hero {
     position: relative;
     height: 60vh;
@@ -1432,7 +1432,7 @@ p {
 }
 
 
-/* Object - Utility */
+/* Object-Utility */
 .u-text-center {
     text-align: center;
 }
